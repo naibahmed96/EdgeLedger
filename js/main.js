@@ -38,7 +38,6 @@ what.addEventListener('mousedown', function (e) {
       behavior: 'smooth'
     })
   }
-  
 })
 
 who.addEventListener('mousedown', function (e) {
@@ -56,7 +55,6 @@ who.addEventListener('mousedown', function (e) {
       behavior: "smooth",
     });
   }
-  
 })
 contact.addEventListener('mousedown', function(e) {
   if (e.clientX < 385) {
@@ -71,9 +69,7 @@ contact.addEventListener('mousedown', function(e) {
       left: 0,
       behavior: "smooth",
     });
-  
   }
- 
 })
 
 window.addEventListener('scroll', function (e) {
@@ -84,16 +80,3 @@ window.addEventListener('scroll', function (e) {
   }
 })
 
-
-// Smooth scroll
-// window.scroll({
-//   top: 1500,
-//   left: 0,
-//   behavior: 'smooth'
-// })
-
-// window.scrollBy({
-//   top: 200,
-//   left: 0,
-//   behavior: 'smooth'
-// })
