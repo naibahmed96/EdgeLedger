@@ -25,7 +25,7 @@ home.addEventListener('mousedown', function () {
 
 what.addEventListener('mousedown', function() {
   window.scroll({
-    top: 650,
+    top: 600,
     left: 0,
     behavior: 'smooth'
   })
