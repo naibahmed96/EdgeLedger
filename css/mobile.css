@@ -1,0 +1,51 @@
+/* What we do section */
+#what .items {
+  display: block;
+  padding: 1rem;
+}
+
+#what .items .item {
+  display: flex;
+  text-align: left;
+}
+
+#what .items .item i {
+  align-self: center;
+  margin-right: 20px;
+}
+
+
+/* Smart Phone */
+@media (max-width: 500px) {
+  
+  #navbar {
+    flex-direction: column;
+  }
+  #navbar h1 {
+    margin-bottom: 0.5rem;
+  }
+  #navbar ul {
+    padding: 0.5rem;
+  }
+
+  #who {
+    display: block;
+  }
+  #who .who-img {
+    display: none;
+  }
+
+  #clients .items img {
+    width: 20%;
+  }
+  #clients .items img:last-child {
+    display: none;
+  }
+
+  #contact {
+    display: block;
+  }
+  #contact .contact-map {
+    height: 300px;
+  }
+}

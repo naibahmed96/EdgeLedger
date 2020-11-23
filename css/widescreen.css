@@ -1,0 +1,15 @@
+/* What we do :  section */
+#what .items .item {
+  display: flex;
+  text-align: left;
+}
+#what .items .item i {
+  align-self: center;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+
+/* Contact Map */
+#contact .contact-map {
+  flex: 2;
+}
