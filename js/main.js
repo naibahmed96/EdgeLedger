@@ -23,28 +23,57 @@ home.addEventListener('mousedown', function () {
   })
 })
 
-what.addEventListener('mousedown', function() {
-  window.scroll({
-    top: 600,
-    left: 0,
-    behavior: 'smooth'
-  })
+what.addEventListener('mousedown', function (e) {
+
+  if (e.clientX < 200) {
+    window.scroll({
+      top: 800,
+      left: 0,
+      behavior: 'smooth'
+    })
+  } else {
+    window.scroll({
+      top: 600,
+      left: 0,
+      behavior: 'smooth'
+    })
+  }
+  
 })
 
-who.addEventListener('mousedown', function() {
-  window.scroll({
-    top: 1060,
-    left: 0,
-    behavior: 'smooth'
-  })
-})
-contact.addEventListener('mousedown', function() {
-  window.scroll({
-    top: 1750,
-    left: 0,
-    behavior: 'smooth'
-  })
+who.addEventListener('mousedown', function (e) {
+  console.log(e.clientX);
+  if ( e.clientX < 260) {
+    window.scroll({
+      top: 1550,
+      left: 0,
+      behavior: 'smooth'
+    })
+  } else {
+    window.scroll({
+      top: 1060,
+      left: 0,
+      behavior: "smooth",
+    });
+  }
   
+})
+contact.addEventListener('mousedown', function(e) {
+  if (e.clientX < 385) {
+    window.scroll({
+      top: 2300,
+      left: 0,
+      behavior: 'smooth'
+    })
+  } else {
+    window.scroll({
+      top: 1750,
+      left: 0,
+      behavior: "smooth",
+    });
+  
+  }
+ 
 })
 
 window.addEventListener('scroll', function (e) {
